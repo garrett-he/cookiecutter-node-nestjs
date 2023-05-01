@@ -1,0 +1,24 @@
+{
+    "project_name": "Service Application",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "project_description": "A template project for API service applications using nestjs.",
+    "project_keywords": "service,template,nestjs,backend",
+    "project_version": "0.1.0",
+    "author_name": "Your Name",
+    "author_email": "your.name@email.com",
+    "license_id": [
+        "GPL-3.0",
+        "MIT",
+        "BSD-3-Clause",
+        "MPL-2.0",
+        "Apache-2.0",
+        "No license"
+    ],
+    "license_fullname": "{{ cookiecutter.author_name }}",
+    "license_year": "{% now 'utc', '%Y' %}",
+    "github_user": "{{ cookiecutter.author_name|slugify }}",
+    "node_version": "16.18.1",
+    "use_swagger": ["yes", "no"],
+    "use_mikro_orm": ["yes", "no"],
+    "docker_port": "3000"
+}
